@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { GenerationResponse } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey:"AIzaSyCabFSsGVFIPgOL02_ZVf5p_Yhd0cXzvYQ"});
 
 export const generateLandingPage = async (prompt: string): Promise<GenerationResponse> => {
   const model = "gemini-3-pro-preview";
